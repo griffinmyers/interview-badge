@@ -59,11 +59,9 @@ const memoize = (f, ttl, resolver = (...args) => args[0]) => {
     const key = resolver(...args);
 
     if (cache.has(key)) {
-      console.log('cache hit')
       return cache.get(key);
     }
 
-    console.log('cache miss')
     const result = await f(...args);
     cache.set(key, result);
     setTimeout(() => cache.delete(key), ttl);
