@@ -5,7 +5,7 @@ completed a certain amount of interviews.
 
 Expects a `count` querystring parameter to be set which defines the threshold
 that must be passed to earn an interview badge of that count.  This allows
-arbitrary Interview Badges to be registered with Passport.
+arbitrary badges to be registered with Passport.
 
 ## TODO
 
